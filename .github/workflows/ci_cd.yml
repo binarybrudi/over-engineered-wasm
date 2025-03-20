@@ -24,12 +24,7 @@ jobs:
       run: dotnet build ./App/DiamondApp/DiamondApp.csproj -c Release --no-restore
 
     - name: publish
-      run: dotnet publish ./App/DiamondApp/DiamondApp.csproj -c Release -o wwwroot --no-build
-
-    - name: list content
-      run: ls -l
-    - name: list wwwroot
-      run: cd wwwroot/ && ls -l
+      run: dotnet publish ./App/DiamondApp/DiamondApp.csproj -c Release -o ./ --no-build
 
     - name: copy index.html to 404.html
       run: cp wwwroot/index.html wwwroot/404.html
