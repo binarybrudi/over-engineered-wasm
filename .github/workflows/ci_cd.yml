@@ -13,7 +13,7 @@ jobs:
         with:
           dotnet-version: '9.0.x'
       - name: publish
-        run: dotnet publish ./App/DiaDiamondApp/DiamondApp.csproj -c release -o wwwroot
+        run: dotnet publish ./App/DiamondApp/DiamondApp.csproj -c release -o wwwroot
       - name: copy index.html to 404.html
         run: cp wwwroot/index.html wwwroot/404.html
       - name: deploy to github pages
