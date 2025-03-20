@@ -1,4 +1,4 @@
-name: deploy to GitHub Pages
+name: ci_cd
 
 permissions:
   contents: write
@@ -35,7 +35,7 @@ jobs:
     - name: add .nojekyll file
       run: touch wwwroot/.nojekyll
 
-    - name: deploy to GitHub Pages
+    - name: deploy to github pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
