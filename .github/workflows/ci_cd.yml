@@ -27,10 +27,13 @@ jobs:
       run: dotnet build ./App/DiamondApp/DiamondApp.csproj -c Release --no-restore
 
     - name: publish
-      run: dotnet publish ./App/DiamondApp/DiamondApp.csproj -c Release -o ./ --no-build
+      run: dotnet publish ./App/DiamondApp/DiamondApp.csproj -c Release -o wwwroot --no-build
 
     - name: copy index.html to 404.html
-      run: cp wwwroot/index.html wwwroot/404.html
+      run: cp wwwroot/wwwroot/index.html wwwroot/wwwroot/404.html
+
+    - name: add .nojekyll file
+      run: touch wwwroot/.nojekyll
 
     - name: deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
