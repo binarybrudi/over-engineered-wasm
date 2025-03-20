@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "DiamondApp",
   "resources": {
-    "hash": "sha256-QRNBg8a19KOa9aFo6+FNUeXkxxga1A7RnPytunPmijc=",
+    "hash": "sha256-MBNg8hLJxCv1SUtKVRXcFS0SpqEQJHCsPjPXyKJNdwM=",
     "fingerprinting": {
-      "DiamondApp.celiens64y.wasm": "DiamondApp.wasm",
+      "DiamondApp.rwx6t8umay.wasm": "DiamondApp.wasm",
       "Microsoft.AspNetCore.Components.mj2y0nf8e6.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.z4w6gtodac.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.x2j556spaa.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -64,7 +64,7 @@
       "System.Runtime.InteropServices.JavaScript.yp5otp0yze.wasm": "sha256-9vMhyrdnDR1K3SWPcQXiSguc14fFXzJdL2ej/CG1UCo="
     },
     "assembly": {
-      "DiamondApp.celiens64y.wasm": "sha256-LPk/458d0l75Fn0VIC5aITxZLPb3Y5n9fipOMhB2kRQ=",
+      "DiamondApp.rwx6t8umay.wasm": "sha256-1VGv/ySrCSmaYrid73zAwmO/Kuju9rsZgfDoKte+WUU=",
       "Microsoft.AspNetCore.Components.mj2y0nf8e6.wasm": "sha256-Yu1G8Dq2GtAZd9yudwcI+Kaby7SKRMhlYH6w2qMbbQA=",
       "Microsoft.AspNetCore.Components.Web.z4w6gtodac.wasm": "sha256-zbMPXkqjWDKLIqw8Qv9eFw9oL/Q4R974z79Jur9P1ww=",
       "Microsoft.AspNetCore.Components.WebAssembly.x2j556spaa.wasm": "sha256-2eyvW3GonR8VaL87CM/HRRjG/zdgkUIEeQfM7osKCgM=",
