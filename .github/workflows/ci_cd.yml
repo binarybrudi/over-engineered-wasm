@@ -13,12 +13,12 @@ jobs:
         with:
           dotnet-version: '9.0.x'
       - name: publish
-        run: dotnet publish DiamondApp.csproj -c release -o wwwroot
+        run: dotnet publish ./App/DiaDiamondApp/DiamondApp.csproj -c release -o wwwroot
+      - name: copy index.html to 404.html
+        run: cp wwwroot/index.html wwwroot/404.html
       - name: deploy to github pages
-        uses: peaceiris/achtions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./wwwroot
-      - name: copy index.html to 404.html
-        run: cp wwwroot/index.html wwwroot/404.html
 
