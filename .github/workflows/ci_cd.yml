@@ -1,24 +1,37 @@
-name: deploy to github pages
+name: deploy to GitHub Pages
+
 on:
   push:
     branches:
       - main
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - name: setup .net core
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: '9.0.x'
-      - name: publish
-        run: dotnet publish ./App/DiamondApp/DiamondApp.csproj -c release -o /home/runner/work/over-engineered-wasm/over-engineered-wasm/wwwroot/
-      - name: copy index.html to 404.html
-        run: cp /home/runner/work/over-engineered-wasm/over-engineered-wasm/wwwroot/index.html /home/runner/work/over-engineered-wasm/over-engineered-wasm/wwwroot/404.html
-      - name: deploy to github pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./wwwroot
+    - uses: actions/checkout@v2
+
+    - name: setup dotnet
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.100-preview.2.25164.34'
+
+    - name: restore dependencies
+      run: dotnet restore ./App/DiamondApp/DiamondApp.csproj
+
+    - name: build
+      run: dotnet build ./App/DiamondApp/DiamondApp.csproj -c Release --no-restore
+
+    - name: publish
+      run: dotnet publish ./App/DiamondApp/DiamondApp.csproj -c Release -o wwwroot --no-build
+
+    - name: copy index.html to 404.html
+      run: cp wwwroot/index.html wwwroot/404.html
+
+    - name: deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: wwwroot
 
