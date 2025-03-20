@@ -1,0 +1,24 @@
+name: deploy to github pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: setup .net core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '9.0.x'
+      - name: publish
+        run: dotnet publish DiamondApp.csproj -c release -o wwwroot
+      - name: deploy to github pages
+        uses: peaceiris/achtions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./wwwroot
+      - name: copy index.html to 404.html
+        run: cp wwwroot/index.html wwwroot/404.html
+
