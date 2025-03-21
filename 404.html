@@ -29,6 +29,15 @@
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="js/diamond.js"></script>
+    <script>
+        Blazor.start().then(() => {
+            const loading = document.getElementById('loading');
+            loading.classList.add('fade-out');
+            setTimeout(() => {
+                loading.style.display = 'none'; /* Hide after fade-out */
+            }, 500); /* Matches fadeOut animation duration */
+        });
+    </script>
 </body>
 
 </html>
