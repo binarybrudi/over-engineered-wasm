@@ -9,3 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
         rainContainer.appendChild(raindrop);
     }
 });
+
+Blazor.start().then(() => {
+    const loading = document.getElementById('splash_screen');
+    loading.classList.add('fade-out');
+    setTimeout(() => {
+        loading.style.display = 'none'; /* Hide after fade-out */
+    }, 500); /* Matches fadeOut animation duration */
+});
