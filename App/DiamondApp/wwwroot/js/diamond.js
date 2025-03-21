@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 Blazor.start().then(() => {
-    const loading = document.getElementById('splash_screen');
-    loading.classList.add('fade-out');
+    const splash_screen = document.getElementById('splash_screen');
+    splash_screen.classList.add('fade-out');
     setTimeout(() => {
-        loading.style.display = 'none'; /* Hide after fade-out */
+        splash_screen.style.display = 'none'; /* Hide after fade-out */
     }, 500); /* Matches fadeOut animation duration */
 });
