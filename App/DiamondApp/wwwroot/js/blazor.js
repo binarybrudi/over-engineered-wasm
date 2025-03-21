@@ -1,4 +1,4 @@
-const startTime = new Date().now();
+const startTime = Date.now();
 const minimum_splash_screen_time = 3000;
 
 Blazor.start().then(() => {
