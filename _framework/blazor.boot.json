@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "Brudibytes.Diamond.App.DiamondApp",
   "resources": {
-    "hash": "sha256-w7z/y+wE3YiTTUStNDIDmD7HViRSd8tmr82KYyrsImE=",
+    "hash": "sha256-r1FN1I0sBMf7B9WrPZH7yzeNFbwvW9HKB3Z8pot84mo=",
     "fingerprinting": {
-      "Brudibytes.Diamond.App.DiamondApp.jhaq02dwmj.wasm": "Brudibytes.Diamond.App.DiamondApp.wasm",
+      "Brudibytes.Diamond.App.DiamondApp.c30rv0ab2b.wasm": "Brudibytes.Diamond.App.DiamondApp.wasm",
       "Microsoft.AspNetCore.Components.pc45n0k62i.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.tlordy4z86.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.2d4yi46ev7.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -62,7 +62,7 @@
       "System.Runtime.InteropServices.JavaScript.ms1astds5n.wasm": "sha256-lid9XdYjOLBMxt65anhgxOU/RtzuBUBGgMpOb9MGIBM="
     },
     "assembly": {
-      "Brudibytes.Diamond.App.DiamondApp.jhaq02dwmj.wasm": "sha256-aTA6tmF+EAWbFPz2/+Ae6SjnCl/13tj2dws8Qk6IbWU=",
+      "Brudibytes.Diamond.App.DiamondApp.c30rv0ab2b.wasm": "sha256-yOcgnQToKYj2Yls5czVtZTN8/tMNkfDOYZoiE4BTcwA=",
       "Microsoft.AspNetCore.Components.pc45n0k62i.wasm": "sha256-tyNyhIFSiPbjEzDIIUXYwq4a0zpNaD8Xmn98sRF6lwE=",
       "Microsoft.AspNetCore.Components.Web.tlordy4z86.wasm": "sha256-r1XWxESEG7OrRQQBmqUTmWyhi+5Us2YKxI4EzWCDGL0=",
       "Microsoft.AspNetCore.Components.WebAssembly.2d4yi46ev7.wasm": "sha256-lgxNynw6kxcop8U5/pH1M8u6jXI2cDE58k+kwBNDbPQ=",
