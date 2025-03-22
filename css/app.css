@@ -50,3 +50,7 @@ body {
     background: black;
     color: antiquewhite;
 }
+
+h1:focus {
+    outline: none;
+}
