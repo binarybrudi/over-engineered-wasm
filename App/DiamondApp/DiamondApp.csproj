@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
-    <AssemblyName>Brudibytes.Diamond.App.DiamondApp</AssemblyName>
-    <RootNamespace>Brudibytes.Diamond.App.DiamondApp</RootNamespace>
+    <AssemblyName>DiamondApp</AssemblyName>
+    <RootNamespace>DiamondApp</RootNamespace>
   </PropertyGroup>
   
   <PropertyGroup>

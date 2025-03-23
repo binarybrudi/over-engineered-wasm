@@ -1,4 +1,5 @@
-using Brudibytes.Diamond.App.DiamondApp;using Diamond.CrossCutting.DIRegistration;
+using DiamondApp;
+using Diamond.CrossCutting.DIRegistration;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
