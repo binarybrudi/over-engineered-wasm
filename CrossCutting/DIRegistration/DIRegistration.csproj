@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>Fuck up point</Description>
+        <AssemblyName>Diamond.CrossCutting.DIRegistration</AssemblyName>
+        <RootNamespace>Diamond.CrossCutting.DIRegistration</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Framework\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
+    </ItemGroup>
+
+</Project>

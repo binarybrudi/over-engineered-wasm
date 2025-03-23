@@ -15,4 +15,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer"  PrivateAssets="all" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\CrossCutting\DIRegistration\DIRegistration.csproj" />
+  </ItemGroup>
+
 </Project>
