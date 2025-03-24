@@ -1,9 +1,11 @@
 {
-  "mainAssemblyName": "Brudibytes.Diamond.App.DiamondApp",
+  "mainAssemblyName": "DiamondApp",
   "resources": {
-    "hash": "sha256-ZdtDae2acO6TPvVmv+3403In7VpQ805U1PaexZG5dCA=",
+    "hash": "sha256-/F6XZoTyyQFMAGcTs3igknEHY8KSaTz8/eyJyU3qvXU=",
     "fingerprinting": {
-      "Brudibytes.Diamond.App.DiamondApp.4j6jd60tim.wasm": "Brudibytes.Diamond.App.DiamondApp.wasm",
+      "Brudibytes.Core.Contract.yb602lwil0.wasm": "Brudibytes.Core.Contract.wasm",
+      "Diamond.CrossCutting.DIRegistration.mtnpjdaojk.wasm": "Diamond.CrossCutting.DIRegistration.wasm",
+      "DiamondApp.s9gju0g7ph.wasm": "DiamondApp.wasm",
       "Microsoft.AspNetCore.Components.pc45n0k62i.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.tlordy4z86.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.2d4yi46ev7.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -31,7 +33,7 @@
       "System.Private.CoreLib.ns1yd0amde.wasm": "System.Private.CoreLib.wasm",
       "System.Private.Uri.v49l95a2yw.wasm": "System.Private.Uri.wasm",
       "System.Runtime.InteropServices.JavaScript.ms1astds5n.wasm": "System.Runtime.InteropServices.JavaScript.wasm",
-      "System.Runtime.mdxkac6be4.wasm": "System.Runtime.wasm",
+      "System.Runtime.a6asn2aokd.wasm": "System.Runtime.wasm",
       "System.Text.Encodings.Web.w500ro652j.wasm": "System.Text.Encodings.Web.wasm",
       "System.Text.Json.zijk1oovwv.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.mq77gt957h.wasm": "System.Text.RegularExpressions.wasm",
@@ -62,7 +64,9 @@
       "System.Runtime.InteropServices.JavaScript.ms1astds5n.wasm": "sha256-lid9XdYjOLBMxt65anhgxOU/RtzuBUBGgMpOb9MGIBM="
     },
     "assembly": {
-      "Brudibytes.Diamond.App.DiamondApp.4j6jd60tim.wasm": "sha256-MBNuPi8GL7fkI1bmWktMaK3N4SeUxBUFFSLlq5w0Fik=",
+      "Brudibytes.Core.Contract.yb602lwil0.wasm": "sha256-8ql1MJdtx+6zignozHdqoBeT7PByIzu/cJGYQO/NJhc=",
+      "Diamond.CrossCutting.DIRegistration.mtnpjdaojk.wasm": "sha256-2iujyuVeAShVIbnCusLvFWsveKE/wgx9TJFKnWMV8oA=",
+      "DiamondApp.s9gju0g7ph.wasm": "sha256-4Ig/4hgUMgrJbdewfGRfqywS8LPGRRlDaiDr85n7XH4=",
       "Microsoft.AspNetCore.Components.pc45n0k62i.wasm": "sha256-tyNyhIFSiPbjEzDIIUXYwq4a0zpNaD8Xmn98sRF6lwE=",
       "Microsoft.AspNetCore.Components.Web.tlordy4z86.wasm": "sha256-r1XWxESEG7OrRQQBmqUTmWyhi+5Us2YKxI4EzWCDGL0=",
       "Microsoft.AspNetCore.Components.WebAssembly.2d4yi46ev7.wasm": "sha256-lgxNynw6kxcop8U5/pH1M8u6jXI2cDE58k+kwBNDbPQ=",
@@ -88,7 +92,7 @@
       "System.Net.Http.35wi3ips5w.wasm": "sha256-N26WLAwAqpRAtr19DpDnGVZQGmuRJuVGhDiocnbtObs=",
       "System.Net.Primitives.rkn082xkb5.wasm": "sha256-pSjQdFkdtQTSQMK79roQx01zlZmz5JwQPn9LrakEmjE=",
       "System.Private.Uri.v49l95a2yw.wasm": "sha256-geFfD+ORwUy5nlWGVTOotcnlQsABkyV9IZFlA3t6faQ=",
-      "System.Runtime.mdxkac6be4.wasm": "sha256-BgB8BvJBjNn0BXn5EMgWvPVzaPVTXQItBY0+hV2YIEE=",
+      "System.Runtime.a6asn2aokd.wasm": "sha256-goG7cGsPDLxdmtG6NF15Gse5rAvzuWePI3Jvh6dLlIo=",
       "System.Text.Encodings.Web.w500ro652j.wasm": "sha256-1PsSw9/FxytZzkf7F6Hq3qCJ2Fe2mDu/GxNxE0Fvk1U=",
       "System.Text.Json.zijk1oovwv.wasm": "sha256-JR+J6dmP3urI/Ky5TDZ6o/P6LdUV7Ad8UoFVj+3OzdI=",
       "System.Text.RegularExpressions.mq77gt957h.wasm": "sha256-7pZNuDW6ZXkc6rDAlRJ4DR6ZM5U5TDi8cGSCHxeyriQ="
