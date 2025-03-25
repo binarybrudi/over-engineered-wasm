@@ -1,11 +1,11 @@
 {
   "mainAssemblyName": "DiamondApp",
   "resources": {
-    "hash": "sha256-/F6XZoTyyQFMAGcTs3igknEHY8KSaTz8/eyJyU3qvXU=",
+    "hash": "sha256-BQi/oeCw8GEJkYl62tR2mfMKVkoJ3QSxKrxG6MpEIfI=",
     "fingerprinting": {
-      "Brudibytes.Core.Contract.yb602lwil0.wasm": "Brudibytes.Core.Contract.wasm",
-      "Diamond.CrossCutting.DIRegistration.mtnpjdaojk.wasm": "Diamond.CrossCutting.DIRegistration.wasm",
-      "DiamondApp.s9gju0g7ph.wasm": "DiamondApp.wasm",
+      "Brudibytes.Core.Contract.q7mn6kn7ac.wasm": "Brudibytes.Core.Contract.wasm",
+      "Diamond.CrossCutting.DIRegistration.4c5gjhpdc9.wasm": "Diamond.CrossCutting.DIRegistration.wasm",
+      "DiamondApp.q557ivr2ay.wasm": "DiamondApp.wasm",
       "Microsoft.AspNetCore.Components.pc45n0k62i.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.tlordy4z86.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.2d4yi46ev7.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -64,9 +64,9 @@
       "System.Runtime.InteropServices.JavaScript.ms1astds5n.wasm": "sha256-lid9XdYjOLBMxt65anhgxOU/RtzuBUBGgMpOb9MGIBM="
     },
     "assembly": {
-      "Brudibytes.Core.Contract.yb602lwil0.wasm": "sha256-8ql1MJdtx+6zignozHdqoBeT7PByIzu/cJGYQO/NJhc=",
-      "Diamond.CrossCutting.DIRegistration.mtnpjdaojk.wasm": "sha256-2iujyuVeAShVIbnCusLvFWsveKE/wgx9TJFKnWMV8oA=",
-      "DiamondApp.s9gju0g7ph.wasm": "sha256-4Ig/4hgUMgrJbdewfGRfqywS8LPGRRlDaiDr85n7XH4=",
+      "Brudibytes.Core.Contract.q7mn6kn7ac.wasm": "sha256-Npb3gH8dteBZS9j/bIbtf1FXsGpH1She+FeBAgUMpp0=",
+      "Diamond.CrossCutting.DIRegistration.4c5gjhpdc9.wasm": "sha256-BCaZ+8Cr0xp6IHi9Agh3ATrvQ0IRGNLAoOwUo/X8vtY=",
+      "DiamondApp.q557ivr2ay.wasm": "sha256-3nPxFTeo2fpIXf4+ISVKE0M8BOIEQLF0SQfYkOPaBjY=",
       "Microsoft.AspNetCore.Components.pc45n0k62i.wasm": "sha256-tyNyhIFSiPbjEzDIIUXYwq4a0zpNaD8Xmn98sRF6lwE=",
       "Microsoft.AspNetCore.Components.Web.tlordy4z86.wasm": "sha256-r1XWxESEG7OrRQQBmqUTmWyhi+5Us2YKxI4EzWCDGL0=",
       "Microsoft.AspNetCore.Components.WebAssembly.2d4yi46ev7.wasm": "sha256-lgxNynw6kxcop8U5/pH1M8u6jXI2cDE58k+kwBNDbPQ=",
