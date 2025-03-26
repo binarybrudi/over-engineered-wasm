@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Brudibytes.Core.EventBus.Contract</AssemblyName>
+        <RootNamespace>Brudibytes.Core.EventBus.Contract</RootNamespace>
+    </PropertyGroup>
+
+</Project>
