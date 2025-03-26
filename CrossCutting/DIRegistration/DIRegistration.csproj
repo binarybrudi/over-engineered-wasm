@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\Framework\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
+      <ProjectReference Include="..\..\Framework\Brudibytes.Core.EventBus\Brudibytes.Core.EventBus.csproj" />
     </ItemGroup>
 
 </Project>
