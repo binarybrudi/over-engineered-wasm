@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Brudibytes.Core.EventBus</AssemblyName>
+        <RootNamespace>Brudibytes.Core.EventBus</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Brudibytes.Core.EventBus.Contract\Brudibytes.Core.EventBus.Contract.csproj" />
+    </ItemGroup>
+
+</Project>

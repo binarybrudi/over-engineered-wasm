@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brudibytes.Core.Contract", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brudibytes.Core.EventBus.Contract", "Framework\Brudibytes.Core.EventBus.Contract\Brudibytes.Core.EventBus.Contract.csproj", "{199D5EB7-B24B-4934-A275-CF4ED8736E35}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brudibytes.Core.EventBus", "Framework\Brudibytes.Core.EventBus\Brudibytes.Core.EventBus.csproj", "{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,18 @@ Global
 		{199D5EB7-B24B-4934-A275-CF4ED8736E35}.Release|x64.Build.0 = Release|Any CPU
 		{199D5EB7-B24B-4934-A275-CF4ED8736E35}.Release|x86.ActiveCfg = Release|Any CPU
 		{199D5EB7-B24B-4934-A275-CF4ED8736E35}.Release|x86.Build.0 = Release|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Debug|x64.Build.0 = Debug|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Debug|x86.Build.0 = Debug|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Release|x64.ActiveCfg = Release|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Release|x64.Build.0 = Release|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Release|x86.ActiveCfg = Release|Any CPU
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,5 +109,6 @@ Global
 		{BE47F269-07AC-4448-8A69-5B8F605CDEBA} = {2436C3BD-9AB3-4967-A50A-3E0AC388F6C4}
 		{1A6A0E98-942A-4F17-BA7D-25860701CC15} = {478B9FC6-C69E-451A-A1B0-243A72DD6C16}
 		{199D5EB7-B24B-4934-A275-CF4ED8736E35} = {478B9FC6-C69E-451A-A1B0-243A72DD6C16}
+		{B04BF8EC-4A25-49DE-A41E-FEC089B234EE} = {478B9FC6-C69E-451A-A1B0-243A72DD6C16}
 	EndGlobalSection
 EndGlobal
