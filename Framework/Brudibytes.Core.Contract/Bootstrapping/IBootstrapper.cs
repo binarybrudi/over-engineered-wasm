@@ -1,9 +1,14 @@
-using Microsoft.Extensions.Configuration;
+using Brudibytes.Core.EventBus.Contract;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Brudibytes.Core.Contract.Bootstrapping;
 
 public interface IBootstrapper
 {
-    void ActivateAll(IServiceCollection serviceCollection, IConfiguration configuration);
+    void ActivatingAll();
+    void ActivatedAll();
+    void DeactivatedAll();
+    void DeactivatingAll();
+    void RegisterAllMappings(IServiceCollection serviceCollection);
+    void AddAllMessageSubscriptions(IEventBus eventBus);
 }

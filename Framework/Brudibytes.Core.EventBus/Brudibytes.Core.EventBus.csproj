@@ -6,6 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
       <ProjectReference Include="..\Brudibytes.Core.EventBus.Contract\Brudibytes.Core.EventBus.Contract.csproj" />
     </ItemGroup>
 

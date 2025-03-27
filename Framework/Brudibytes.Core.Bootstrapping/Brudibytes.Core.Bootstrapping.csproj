@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Brudibytes.Core.Bootstrapping</AssemblyName>
+        <RootNamespace>Brudibytes.Core.Bootstrapping</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
+    </ItemGroup>
+
+</Project>
