@@ -6,6 +6,11 @@ public class ComponentMap : IComponentMap
 {
     public void Initialize(ICoCoKernel kernel)
     {
-        
+        InitializeDomainLogic(kernel);
+    }
+
+    private void InitializeDomainLogic(ICoCoKernel kernel)
+    {
+        kernel.RegisterComponent<Logic.Domain.Weather.Activator>();
     }
 }
