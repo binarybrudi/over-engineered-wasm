@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather", "Logic\Domain\Wea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Contract", "Logic\Domain\Weather.Contract\Weather.Contract.csproj", "{046ADE63-ECFA-4E20-A848-A00D7B0FDA10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diamond.Ui.Weather", "App\Diamond.Ui.Weather\Diamond.Ui.Weather.csproj", "{81F268F2-9B27-4BB6-94E8-13AD6DE87715}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -158,6 +160,18 @@ Global
 		{046ADE63-ECFA-4E20-A848-A00D7B0FDA10}.Release|x64.Build.0 = Release|Any CPU
 		{046ADE63-ECFA-4E20-A848-A00D7B0FDA10}.Release|x86.ActiveCfg = Release|Any CPU
 		{046ADE63-ECFA-4E20-A848-A00D7B0FDA10}.Release|x86.Build.0 = Release|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Debug|x64.Build.0 = Debug|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Debug|x86.Build.0 = Debug|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Release|x64.ActiveCfg = Release|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Release|x64.Build.0 = Release|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Release|x86.ActiveCfg = Release|Any CPU
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -173,5 +187,6 @@ Global
 		{BB939397-BFC9-4CD4-B947-BDB35211FA3C} = {33FD58CF-3231-4D93-818C-DB287933AD94}
 		{3C8E68D6-FD78-443E-9934-6C761CA03EE2} = {BB939397-BFC9-4CD4-B947-BDB35211FA3C}
 		{046ADE63-ECFA-4E20-A848-A00D7B0FDA10} = {BB939397-BFC9-4CD4-B947-BDB35211FA3C}
+		{81F268F2-9B27-4BB6-94E8-13AD6DE87715} = {F95F473B-E98A-ACD6-1986-755F447BE36F}
 	EndGlobalSection
 EndGlobal
