@@ -27,7 +27,7 @@ jobs:
       run: dotnet build ./App/DiamondApp/DiamondApp.csproj -c Release --no-restore
 
     - name: test
-      run: dotnet test -c Release --no-build
+      run: dotnet test --configuration Release --no-build --no-restore
 
     - name: publish
       run: dotnet publish ./App/DiamondApp/DiamondApp.csproj -c Release -o ./ --no-build
