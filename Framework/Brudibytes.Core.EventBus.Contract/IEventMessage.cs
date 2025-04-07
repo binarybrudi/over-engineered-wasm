@@ -2,5 +2,5 @@
 
 public interface IEventMessage
 {
-    DateTime CreatedAt { get; }
+    DateTimeOffset CreatedAt { get; }
 }

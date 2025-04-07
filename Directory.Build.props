@@ -15,11 +15,14 @@
     <ItemGroup Condition="'$(IsTestProject)' == 'true'">
         <PackageReference Include="coverlet.collector"/>
         <PackageReference Include="Microsoft.NET.Test.Sdk"/>
+        <PackageReference Include="NSubstitute" />
         <PackageReference Include="NUnit"/>
         <PackageReference Include="NUnit.Analyzers"/>
         <PackageReference Include="NUnit3TestAdapter"/>
     </ItemGroup>
     <ItemGroup Condition="'$(IsTestProject)' == 'true'">
+        <Using Include="NSubstitute"/>
+        <Using Include="NUnit"/>
         <Using Include="NUnit.Framework"/>
     </ItemGroup>
 

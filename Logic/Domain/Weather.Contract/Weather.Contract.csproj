@@ -5,4 +5,8 @@
         <RootNamespace>Diamond.Logic.Domain.Weather.Contract</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Framework\Brudibytes.Core.EventBus.Contract\Brudibytes.Core.EventBus.Contract.csproj" />
+    </ItemGroup>
+
 </Project>
