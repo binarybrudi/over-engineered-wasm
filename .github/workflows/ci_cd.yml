@@ -21,13 +21,13 @@ jobs:
         dotnet-version: '10.0.100-preview.2.25164.34'
 
     - name: restore dependencies
-      run: dotnet restore ./App/DiamondApp/DiamondApp.csproj
+      run: dotnet restore 
 
     - name: build
-      run: dotnet build ./App/DiamondApp/DiamondApp.csproj -c Release --no-restore
+      run: dotnet build -c Release --no-restore
 
     - name: test
-      run: dotnet test --configuration Release --no-build --no-restore
+      run: dotnet test --configuration Release --no-build
 
     - name: publish
       run: dotnet publish ./App/DiamondApp/DiamondApp.csproj -c Release -o ./ --no-build
