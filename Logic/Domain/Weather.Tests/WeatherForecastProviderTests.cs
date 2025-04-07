@@ -3,6 +3,7 @@ using FluentAssertions.Execution;
 
 namespace Diamond.Logic.Domain.Weather.Tests;
 
+[FixtureLifeCycle(LifeCycle.InstancePerTestCase)]
 public class WeatherForecastProviderTests
 {
     [Test]
