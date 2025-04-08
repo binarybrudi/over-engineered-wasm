@@ -32,7 +32,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.0rem;
 }
 
 .detail-container_item {
@@ -47,12 +46,9 @@
 }
 
 .divider {
-    height: 2rem;
+    height: 100%;
     width: 0.125rem;
     background-color: rgba(0, 0, 0, 0.2);
     margin: 0 1rem;
-}
-
-.detail-container_item-value {
-    font-weight: 500;
+    flex-shrink: 0;
 }
