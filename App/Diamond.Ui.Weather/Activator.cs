@@ -1,9 +1,9 @@
 using Brudibytes.Core.Contract.Bootstrapping;
 using Brudibytes.Core.EventBus.Contract;
-using Diamond.Logic.Domain.Weather.Contract;
+using Diamond.Ui.Weather.Messaging;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Diamond.Logic.Domain.Weather;
+namespace Diamond.Ui.Weather;
 
 public class Activator : IComponentActivator
 {
@@ -17,8 +17,11 @@ public class Activator : IComponentActivator
 
     public void RegisterMappings(IServiceCollection serviceCollection)
     {
-        serviceCollection.AddTransient<IWeatherForecastProvider, WeatherForecastProvider>();
+        serviceCollection.AddSingleton<CurrentWeatherForecastMessageHandler>();
     }
 
-    public void AddMessageSubscriptions(IEventBus eventBus) { }
+    public void AddMessageSubscriptions(IEventBus eventBus)
+    {
+        // eventBus.Subscribe();
+    }
 }

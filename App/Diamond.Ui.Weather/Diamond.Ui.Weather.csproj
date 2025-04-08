@@ -13,4 +13,13 @@
       <PackageReference Include="Microsoft.AspNetCore.Components.Web" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Framework\Brudibytes.Core.Bootstrapping\Brudibytes.Core.Bootstrapping.csproj" />
+      <ProjectReference Include="..\..\Logic\Domain\Weather.Contract\Weather.Contract.csproj" />
+    </ItemGroup>
+
 </Project>
