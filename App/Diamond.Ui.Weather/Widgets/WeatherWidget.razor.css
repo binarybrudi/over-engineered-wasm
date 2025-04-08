@@ -1,6 +1,7 @@
 .weather-widget_container {
     width: 100%;
     background-color: #f9f9f2; /* old white color */
+    color: black;
     border-radius: 1rem;
     padding: 1.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
