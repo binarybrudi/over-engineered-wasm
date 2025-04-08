@@ -1,0 +1,55 @@
+/* _content/Diamond.Ui.Weather/Widgets/WeatherWidget.razor.rz.scp.css */
+.weather-widget_container[b-pq72v4pdpm] {
+    width: 100%;
+    background-color: #f9f9f2; /* old white color */
+    color: black;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* create 1:1 aspect ratio */
+.weather-widget_container[b-pq72v4pdpm]::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.weather-widget_container_content[b-pq72v4pdpm] {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1.0rem;
+    justify-content: space-between;
+}
+
+.text[b-pq72v4pdpm] {
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+
+.weather-widget_container_content_detail-container[b-pq72v4pdpm] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail-container_item[b-pq72v4pdpm] {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.icon[b-pq72v4pdpm] {
+    font-size: 1.0rem;
+    margin-right: 0.5rem;
+}
+
+.divider[b-pq72v4pdpm] {
+    height: 100%;
+    width: 0.125rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 1rem;
+    flex-shrink: 0;
+}
