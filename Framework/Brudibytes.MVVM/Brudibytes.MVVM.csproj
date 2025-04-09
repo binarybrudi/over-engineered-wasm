@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Brudibytes.MVVM</AssemblyName>
+        <RootNamespace>Brudibytes.MVVM</RootNamespace>
+    </PropertyGroup>
+
+</Project>

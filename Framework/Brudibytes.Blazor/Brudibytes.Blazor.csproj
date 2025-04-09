@@ -18,4 +18,8 @@
       <Folder Include="wwwroot\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Brudibytes.MVVM\Brudibytes.MVVM.csproj" />
+    </ItemGroup>
+
 </Project>
