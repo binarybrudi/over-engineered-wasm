@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Components;
 
 namespace Brudibytes.Blazor;
 
-public abstract class BbComponentBase : ComponentBase
+public abstract class BbLayoutComponentBase : LayoutComponentBase
 {
     protected override void OnAfterRender(bool firstRender)
     {

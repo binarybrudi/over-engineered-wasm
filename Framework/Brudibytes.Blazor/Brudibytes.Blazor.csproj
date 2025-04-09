@@ -3,6 +3,7 @@
     <PropertyGroup>
         <AssemblyName>Brudibytes.Blazor</AssemblyName>
         <RootNamespace>Brudibytes.Blazor</RootNamespace>
+        <NoWarn></NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
