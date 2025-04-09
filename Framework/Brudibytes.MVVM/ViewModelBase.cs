@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace Brudibytes.MVVM;
 
-public abstract class ViewModelBase : INotifyPropertyChanged
+public abstract class ViewModelBase : INotifyPropertyChanged, ILoadDataAsync
 {
     public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -22,5 +22,10 @@ public abstract class ViewModelBase : INotifyPropertyChanged
         field = value;
         OnPropertyChanged(propertyName);
         return true;
+    }
+    
+    public virtual Task LoadDataAsync()
+    {
+        return Task.CompletedTask;
     }
 }

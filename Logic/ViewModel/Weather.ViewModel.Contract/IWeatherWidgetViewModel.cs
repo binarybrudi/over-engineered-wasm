@@ -1,10 +1,10 @@
 using System.ComponentModel;
+using Brudibytes.MVVM;
 using Diamond.Logic.ViewModel.Weather.ViewModel.Contract.DataClasses;
 
 namespace Diamond.Logic.ViewModel.Weather.ViewModel.Contract;
 
-public interface IWeatherWidgetViewModel : INotifyPropertyChanged
+public interface IWeatherWidgetViewModel : INotifyPropertyChanged, ILoadDataAsync
 {
     CurrentWeatherForecast CurrentWeatherForecast { get; }
-    void RequestCurrentWeatherForecast();
 }

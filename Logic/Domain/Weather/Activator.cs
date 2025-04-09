@@ -18,6 +18,7 @@ public class Activator : IComponentActivator
     public void RegisterMappings(IServiceCollection serviceCollection)
     {
         serviceCollection.AddTransient<IWeatherForecastProvider, WeatherForecastProvider>();
+        serviceCollection.AddTransient<IWeatherForecastMessageTrigger, WeatherForecastMessageTrigger>();
     }
 
     public void AddMessageSubscriptions(IEventBus eventBus) { }

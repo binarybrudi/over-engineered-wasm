@@ -1,10 +1,11 @@
 using System.ComponentModel;
+using Brudibytes.MVVM;
 using Microsoft.AspNetCore.Components;
 
 namespace Brudibytes.Blazor;
 
 public abstract class ViewModelComponentBase<TViewModel> : BbComponentBase, IAsyncDisposable, IDisposable
-    where TViewModel : class, INotifyPropertyChanged
+    where TViewModel : class, ILoadDataAsync, INotifyPropertyChanged
 {
     private TViewModel _viewModel = default!;
 
@@ -24,6 +25,14 @@ public abstract class ViewModelComponentBase<TViewModel> : BbComponentBase, IAsy
             _viewModel.PropertyChanged += OnPropertyChanged;
         }
     }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        var loadDataTask = _viewModel.LoadDataAsync();
+        var baseTask = base.OnParametersSetAsync();
+        await Task.WhenAll(loadDataTask, baseTask);
+    }
+
 
     public virtual void Dispose()
     {

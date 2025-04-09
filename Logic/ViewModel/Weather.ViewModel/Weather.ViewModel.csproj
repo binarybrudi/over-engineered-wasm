@@ -8,6 +8,7 @@
     <ItemGroup>
       <ProjectReference Include="..\..\..\Framework\Brudibytes.Core.Bootstrapping\Brudibytes.Core.Bootstrapping.csproj" />
       <ProjectReference Include="..\..\..\Framework\Brudibytes.MVVM\Brudibytes.MVVM.csproj" />
+      <ProjectReference Include="..\..\Domain\Weather.Contract\Weather.Contract.csproj" />
       <ProjectReference Include="..\Weather.ViewModel.Contract\Weather.ViewModel.Contract.csproj" />
     </ItemGroup>
 

@@ -5,4 +5,8 @@
         <RootNamespace>Diamond.Logic.ViewModel.Weather.ViewModel.Contract</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Framework\Brudibytes.MVVM\Brudibytes.MVVM.csproj" />
+    </ItemGroup>
+
 </Project>
