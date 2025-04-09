@@ -1,0 +1,47 @@
+/* _content/Diamond.Ui.Weather/Widgets/WeatherWidget.razor.rz.scp.css */
+.container[b-pq72v4pdpm] {
+    background-color: floralwhite;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Create 1:1 aspect ratio */
+.container[b-pq72v4pdpm]::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.widget[b-pq72v4pdpm] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+}
+
+.widget__background[b-pq72v4pdpm] {
+    z-index: 1;
+}
+
+.widget__content[b-pq72v4pdpm] {
+    z-index: 2;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 0.75rem;
+}
+
+.text[b-pq72v4pdpm] {
+    color: black;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+.add_celsius[b-pq72v4pdpm]::after {
+    content: "°C";
+}
