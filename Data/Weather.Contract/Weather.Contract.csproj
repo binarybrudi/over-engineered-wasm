@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Data.Weather.Contract</AssemblyName>
+        <RootNamespace>Diamond.Data.Weather.Contract</RootNamespace>
+    </PropertyGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Data.Weather.Rest</AssemblyName>
+        <RootNamespace>Diamond.Data.Weather.Rest</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Weather.Contract\Weather.Contract.csproj" />
+    </ItemGroup>
+
+</Project>

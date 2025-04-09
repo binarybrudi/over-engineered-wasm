@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Framework\Brudibytes.Blazor\Brudibytes.Blazor.csproj" />
     <ProjectReference Include="..\..\Framework\Brudibytes.Core.Bootstrapping\Brudibytes.Core.Bootstrapping.csproj" />
     <ProjectReference Include="..\..\Framework\Brudibytes.Core.EventBus\Brudibytes.Core.EventBus.csproj" />
     <ProjectReference Include="..\..\Framework\Brudibytes.Core.Microsoft.DependencyInjection.Adapter\Brudibytes.Core.Microsoft.DependencyInjection.Adapter.csproj" />

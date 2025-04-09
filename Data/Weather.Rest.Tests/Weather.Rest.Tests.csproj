@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Data.Weather.Rest.Tests</AssemblyName>
+        <RootNamespace>Diamond.Data.Weather.Rest.Tests</RootNamespace>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Weather.Rest\Weather.Rest.csproj" />
+    </ItemGroup>
+
+</Project>
