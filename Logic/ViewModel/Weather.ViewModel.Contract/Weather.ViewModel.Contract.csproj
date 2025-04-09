@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Logic.ViewModel.Weather.ViewModel.Contract</AssemblyName>
+        <RootNamespace>Diamond.Logic.ViewModel.Weather.ViewModel.Contract</RootNamespace>
+    </PropertyGroup>
+
+</Project>

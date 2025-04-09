@@ -8,6 +8,12 @@ public class ComponentMap : IComponentMap
     {
         InitializeUi(kernel);
         InitializeDomainLogic(kernel);
+        InitializeViewModel(kernel);
+    }
+
+    private void InitializeViewModel(ICoCoKernel kernel)
+    {
+        kernel.RegisterComponent<Diamond.Logic.ViewModel.Weather.ViewModel.Activator>();
     }
 
     private void InitializeUi(ICoCoKernel kernel)

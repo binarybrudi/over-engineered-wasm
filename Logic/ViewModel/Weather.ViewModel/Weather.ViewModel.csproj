@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Logic.ViewModel.Weather.ViewModel</AssemblyName>
+        <RootNamespace>Diamond.Logic.ViewModel.Weather.ViewModel</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Framework\Brudibytes.Core.Bootstrapping\Brudibytes.Core.Bootstrapping.csproj" />
+      <ProjectReference Include="..\..\..\Framework\Brudibytes.MVVM\Brudibytes.MVVM.csproj" />
+      <ProjectReference Include="..\Weather.ViewModel.Contract\Weather.ViewModel.Contract.csproj" />
+    </ItemGroup>
+
+</Project>
