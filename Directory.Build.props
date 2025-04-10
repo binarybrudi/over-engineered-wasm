@@ -6,6 +6,14 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
+    
+    <PropertyGroup>
+        <IsTestProject Condition="$(AssemblyName.EndsWith('.Test'))">true</IsTestProject>        
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(IsTestProject)' != 'true'">
+        <InternalsVisibleTo Include="$(AssemblyName).Test"/>
+    </ItemGroup>
 
     <PropertyGroup Condition="'$(IsTestProject)' == 'true'">
         <IsPackable>false</IsPackable>
@@ -13,6 +21,7 @@
 
     <ItemGroup Condition="'$(IsTestProject)' == 'true'">
         <PackageReference Include="coverlet.collector"/>
+        <PackageReference Include="FluentAssertions"/>
         <PackageReference Include="Microsoft.NET.Test.Sdk"/>
         <PackageReference Include="NSubstitute"/>
         <PackageReference Include="NUnit"/>
@@ -20,6 +29,7 @@
         <PackageReference Include="NUnit3TestAdapter"/>
     </ItemGroup>
     <ItemGroup Condition="'$(IsTestProject)' == 'true'">
+        <Using Include="FluentAssertions"/>
         <Using Include="NSubstitute"/>
         <Using Include="NUnit"/>
         <Using Include="NUnit.Framework"/>

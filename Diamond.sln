@@ -42,7 +42,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Contract", "Logic\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diamond.Ui.Weather", "App\Diamond.Ui.Weather\Diamond.Ui.Weather.csproj", "{81F268F2-9B27-4BB6-94E8-13AD6DE87715}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Tests", "Logic\Domain\Weather.Tests\Weather.Tests.csproj", "{1E7C0E26-E874-463F-B438-46DDC2BEC7E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Test", "Logic\Domain\Weather.Test\Weather.Test.csproj", "{1E7C0E26-E874-463F-B438-46DDC2BEC7E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brudibytes.Blazor", "Framework\Brudibytes.Blazor\Brudibytes.Blazor.csproj", "{1155739F-7432-4E57-92D7-A89E632C992C}"
 EndProject

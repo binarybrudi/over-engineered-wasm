@@ -5,7 +5,7 @@ using Diamond.Logic.Domain.Weather.Contract.Messaging;
 
 namespace Diamond.Logic.Domain.Weather;
 
-public class WeatherForecastProvider  : IWeatherForecastProvider
+internal sealed class WeatherForecastProvider  : IWeatherForecastProvider
 {
     private readonly IEventBus _eventBus;
 

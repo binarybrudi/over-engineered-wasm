@@ -3,7 +3,7 @@ using Diamond.Data.Weather.Contract.DataClasses;
 
 namespace Diamond.Data.Weather.Http.OpenMeteo;
 
-internal class CurrentWeatherProjection : ICurrentWeatherProjection
+internal sealed class CurrentWeatherProjection : ICurrentWeatherProjection
 {
     public Task<CurrentWeather> GetCurrentWeatherAsync()
     {

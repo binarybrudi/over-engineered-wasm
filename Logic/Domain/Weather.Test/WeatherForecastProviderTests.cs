@@ -1,6 +1,5 @@
 using Brudibytes.Core.EventBus.Contract;
 using Diamond.Logic.Domain.Weather.Contract.Messaging;
-using FluentAssertions;
 using FluentAssertions.Execution;
 
 namespace Diamond.Logic.Domain.Weather.Tests;

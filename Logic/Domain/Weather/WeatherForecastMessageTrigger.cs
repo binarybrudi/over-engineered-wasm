@@ -4,7 +4,7 @@ using Diamond.Logic.Domain.Weather.Contract.Messaging;
 
 namespace Diamond.Logic.Domain.Weather;
 
-public class WeatherForecastMessageTrigger  : IWeatherForecastMessageTrigger
+internal sealed class WeatherForecastMessageTrigger  : IWeatherForecastMessageTrigger
 {
     private readonly IEventBus _eventBus;
 
