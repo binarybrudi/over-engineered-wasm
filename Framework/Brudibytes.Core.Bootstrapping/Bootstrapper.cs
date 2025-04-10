@@ -8,7 +8,7 @@ namespace Brudibytes.Core.Bootstrapping;
 public class Bootstrapper : IBootstrapper
 {
     private readonly IComponentActivator[] _componentActivators;
-    
+
     public Bootstrapper(IEnumerable<IComponentActivator> componentActivators)
     {
         _componentActivators = componentActivators.ToArray();

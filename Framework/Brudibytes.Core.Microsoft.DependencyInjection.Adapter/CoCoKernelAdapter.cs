@@ -13,7 +13,7 @@ public class CoCoKernelAdapter : ICoCoKernel
     {
         _serviceCollection = serviceCollection;
     }
-    
+
     public void AddTransient<TInterface, TImplementation>()
         where TInterface : class
         where TImplementation : class, TInterface
@@ -38,7 +38,7 @@ public class CoCoKernelAdapter : ICoCoKernel
         {
             return _serviceProvider.GetRequiredService<T>();
         }
-        
+
         throw new InvalidOperationException($"{nameof(ICoCoKernel)} wasn't been built.");
     }
 }

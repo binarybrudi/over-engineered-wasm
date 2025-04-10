@@ -19,9 +19,9 @@ public abstract class ViewModelComponentBase<TViewModel> : BbComponentBase, IAsy
             {
                 _viewModel.PropertyChanged -= OnPropertyChanged;
             }
-            
+
             _viewModel = value;
-            
+
             _viewModel.PropertyChanged += OnPropertyChanged;
         }
     }
@@ -40,7 +40,7 @@ public abstract class ViewModelComponentBase<TViewModel> : BbComponentBase, IAsy
         {
             return;
         }
-        
+
         _viewModel.PropertyChanged -= OnPropertyChanged;
         if (_viewModel is IDisposable disposable)
         {
@@ -57,7 +57,7 @@ public abstract class ViewModelComponentBase<TViewModel> : BbComponentBase, IAsy
             await asyncDisposable.DisposeAsync();
         }
     }
-    
+
     private void OnPropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
         InvokeAsync(StateHasChanged);

@@ -4,7 +4,7 @@ using Diamond.Logic.Domain.Weather.Contract.Messaging;
 
 namespace Diamond.Logic.Domain.Weather;
 
-internal sealed class WeatherForecastMessageTrigger  : IWeatherForecastMessageTrigger
+internal sealed class WeatherForecastMessageTrigger : IWeatherForecastMessageTrigger
 {
     private readonly IEventBus _eventBus;
 
@@ -12,7 +12,7 @@ internal sealed class WeatherForecastMessageTrigger  : IWeatherForecastMessageTr
     {
         _eventBus = eventBus;
     }
-    
+
     public async Task<bool> TriggerCurrentForecastAsync()
     {
         var message = new CurrentForecastMessage()

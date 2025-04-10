@@ -13,7 +13,7 @@ public class Activator : IComponentActivator
     public void Activated() { }
 
     public void Deactivating() { }
-    
+
     public void Deactivated() { }
 
     public void RegisterMappings(IServiceCollection serviceCollection)

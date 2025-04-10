@@ -18,12 +18,12 @@ public abstract class ViewModelBase : INotifyPropertyChanged, ILoadDataAsync
         {
             return false;
         }
-        
+
         field = value;
         OnPropertyChanged(propertyName);
         return true;
     }
-    
+
     public virtual Task LoadDataAsync()
     {
         return Task.CompletedTask;

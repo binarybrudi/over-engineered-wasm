@@ -18,11 +18,11 @@ public class WeatherWidgetViewModel : ViewModelBase, IWeatherWidgetViewModel, IE
         WindSpeed = 0,
     };
 
-    public WeatherWidgetViewModel(IWeatherForecastMessageTrigger  weatherForecastMessageTrigger)
+    public WeatherWidgetViewModel(IWeatherForecastMessageTrigger weatherForecastMessageTrigger)
     {
         _weatherForecastMessageTrigger = weatherForecastMessageTrigger;
-    } 
-    
+    }
+
     public override async Task LoadDataAsync()
     {
         await _weatherForecastMessageTrigger.TriggerCurrentForecastAsync();

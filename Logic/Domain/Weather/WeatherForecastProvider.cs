@@ -5,11 +5,11 @@ using Diamond.Logic.Domain.Weather.Contract.Messaging;
 
 namespace Diamond.Logic.Domain.Weather;
 
-internal sealed class WeatherForecastProvider  : IWeatherForecastProvider
+internal sealed class WeatherForecastProvider : IWeatherForecastProvider
 {
     private readonly IEventBus _eventBus;
 
-    public WeatherForecastProvider(IEventBus  eventBus)
+    public WeatherForecastProvider(IEventBus eventBus)
     {
         _eventBus = eventBus;
     }
@@ -27,7 +27,7 @@ internal sealed class WeatherForecastProvider  : IWeatherForecastProvider
             CreatedAt = DateTimeOffset.UtcNow,
             WeatherForecast = forecast
         });
-        
+
         return forecast;
     }
 }

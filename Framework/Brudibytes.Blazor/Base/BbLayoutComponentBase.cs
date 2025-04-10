@@ -9,7 +9,7 @@ public abstract class BbLayoutComponentBase : LayoutComponentBase
         base.OnAfterRender(firstRender);
         OnAfterFirstRender();
     }
-    
+
     protected virtual void OnAfterFirstRender() { }
 
     protected override Task OnAfterRenderAsync(bool firstRender)
@@ -17,7 +17,7 @@ public abstract class BbLayoutComponentBase : LayoutComponentBase
         base.OnAfterRenderAsync(firstRender);
         return OnAfterFirstRenderAsync();
     }
-    
+
     protected virtual Task OnAfterFirstRenderAsync()
         => Task.CompletedTask;
 }
