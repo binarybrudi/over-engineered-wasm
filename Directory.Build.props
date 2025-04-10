@@ -5,10 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    </PropertyGroup>
-    
-    <PropertyGroup>
-        <IsTestProject Condition="$(AssemblyName.EndsWith('.Test'))">true</IsTestProject>        
+        <IsTestProject Condition="$(MSBuildProjectName.EndsWith('.Test'))">true</IsTestProject>
     </PropertyGroup>
 
     <ItemGroup Condition="'$(IsTestProject)' != 'true'">
@@ -30,6 +27,7 @@
     </ItemGroup>
     <ItemGroup Condition="'$(IsTestProject)' == 'true'">
         <Using Include="FluentAssertions"/>
+        <Using Include="FluentAssertions.Execution"/>
         <Using Include="NSubstitute"/>
         <Using Include="NUnit"/>
         <Using Include="NUnit.Framework"/>

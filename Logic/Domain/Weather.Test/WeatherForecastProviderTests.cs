@@ -1,8 +1,7 @@
 using Brudibytes.Core.EventBus.Contract;
 using Diamond.Logic.Domain.Weather.Contract.Messaging;
-using FluentAssertions.Execution;
 
-namespace Diamond.Logic.Domain.Weather.Tests;
+namespace Diamond.Logic.Domain.Weather.Test;
 
 [FixtureLifeCycle(LifeCycle.InstancePerTestCase)]
 public class WeatherForecastProviderTests
