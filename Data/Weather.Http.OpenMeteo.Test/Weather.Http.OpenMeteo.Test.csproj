@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Data.Weather.Http.OpenMeteo.Test</AssemblyName>
+        <RootNamespace>Diamond.Data.Weather.Http.OpenMeteo.Test</RootNamespace>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Weather.Http.OpenMeteo\Weather.Http.OpenMeteo.csproj" />
+    </ItemGroup>
+
+</Project>

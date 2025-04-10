@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Data.Weather.Http.OpenMeteo</AssemblyName>
+        <RootNamespace>Diamond.Data.Weather.Http.OpenMeteo</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Framework\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
+      <ProjectReference Include="..\Weather.Contract\Weather.Contract.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\App\Diamond.Ui.Weather\Diamond.Ui.Weather.csproj" />
+      <ProjectReference Include="..\..\Data\Weather.Http.OpenMeteo\Weather.Http.OpenMeteo.csproj" />
       <ProjectReference Include="..\..\Framework\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
       <ProjectReference Include="..\..\Logic\Domain\Weather\Weather.csproj" />
       <ProjectReference Include="..\..\Logic\ViewModel\Weather.ViewModel\Weather.ViewModel.csproj" />

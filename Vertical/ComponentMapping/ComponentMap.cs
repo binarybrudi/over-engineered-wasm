@@ -9,6 +9,12 @@ public class ComponentMap : IComponentMap
         InitializeUi(kernel);
         InitializeDomainLogic(kernel);
         InitializeViewModel(kernel);
+        InitializeData(kernel);
+    }
+
+    private void InitializeData(ICoCoKernel kernel)
+    {
+        kernel.RegisterComponent<Diamond.Data.Weather.Http.OpenMeteo.Activator>();
     }
 
     private void InitializeViewModel(ICoCoKernel kernel)
