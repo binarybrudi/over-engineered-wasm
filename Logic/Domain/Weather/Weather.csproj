@@ -6,6 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\Data\Weather.Contract\Weather.Contract.csproj" />
       <ProjectReference Include="..\..\..\Framework\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
       <ProjectReference Include="..\Weather.Contract\Weather.Contract.csproj" />
     </ItemGroup>

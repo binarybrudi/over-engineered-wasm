@@ -1,4 +1,5 @@
 using Brudibytes.Core.EventBus.Contract;
+using Diamond.Data.Weather.Contract;
 using Diamond.Logic.Domain.Weather.Contract.Messaging;
 
 namespace Diamond.Logic.Domain.Weather.Test;
@@ -6,7 +7,7 @@ namespace Diamond.Logic.Domain.Weather.Test;
 [FixtureLifeCycle(LifeCycle.InstancePerTestCase)]
 public class WeatherForecastProviderTests
 {
-    private readonly IEventBus _eventBus = Substitute.For<IEventBus>();
+    private readonly ICurrentWeatherProjection _currentWeatherProjection = Substitute.For<ICurrentWeatherProjection>();
 
     [Test]
     public async Task ProvideCurrentAsync_HappyPath_ReturnsCurrentSendsMessage()
@@ -34,11 +35,10 @@ public class WeatherForecastProviderTests
         var result = await sut.ProvideCurrentAsync();
 
         // then
-        await _eventBus.Received(1).PublishAsync(Arg.Any<CurrentForecastMessage>());
     }
 
     private WeatherForecastProvider CreateSut()
     {
-        return new WeatherForecastProvider(_eventBus);
+        return new WeatherForecastProvider(_currentWeatherProjection);
     }
 }

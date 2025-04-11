@@ -4,6 +4,6 @@ public class CurrentWeatherProjectionTests
 {
     private CurrentWeatherProjection CreateSut()
     {
-        return new();
+        return new(null!);
     }
 }
