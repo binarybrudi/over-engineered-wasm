@@ -5,8 +5,4 @@
         <RootNamespace>Diamond.Data.Weather.Contract</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="Exceptions\" />
-    </ItemGroup>
-
 </Project>

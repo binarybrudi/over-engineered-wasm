@@ -6,6 +6,7 @@
     <PackageVersion Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.0-preview.2.25163.2" />
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0-preview.2.25163.2" />
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0-preview.2.25163.2" />
+    <PackageVersion Include="Microsoft.Extensions.Http" Version="10.0.0-preview.3.25171.5" />
   </ItemGroup>
   <ItemGroup Condition="'$(IsTestProject)' == 'true'">
     <PackageVersion Include="coverlet.collector" Version="6.0.4" />
