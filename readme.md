@@ -14,3 +14,10 @@
 #### weather api
 
 - [current weather (open meteo)](https://open-meteo.com/en/docs?forecast_days=1&timezone=auto&latitude=51.0509&longitude=13.7383&forecast_hours=1&current=temperature_2m,is_day&wind_speed_unit=ms)
+
+## architecture
+
+```mermaid
+flowchart TD
+    wasm[Diamond WASM] ---> logiccontract[logic contract]
+```
