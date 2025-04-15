@@ -2,7 +2,7 @@ using Diamond.Logic.Domain.Weather.Contract.DataClasses;
 
 namespace Diamond.Logic.Domain.Weather.Contract;
 
-public interface IWeatherForecastProvider
+public interface ICurrentWeatherProvider
 {
-    Task<WeatherForecast> ProvideCurrentAsync();
+    Task<CurrentWeather> ProvideCurrentAsync();
 }

@@ -21,7 +21,7 @@ public class Activator : IComponentActivator
         serviceCollection.AddTransient<IWeatherWidgetViewModel, WeatherWidgetViewModel>(sp =>
         {
             var bus = sp.GetRequiredService<IEventBus>();
-            var trigger = sp.GetRequiredService<IWeatherForecastMessageTrigger>();
+            var trigger = sp.GetRequiredService<ICurrentWeatherMessageTrigger>();
             var instance = new WeatherWidgetViewModel(trigger);
             bus.Subscribe(instance);
             return instance;

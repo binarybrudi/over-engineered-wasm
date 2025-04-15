@@ -9,7 +9,7 @@ namespace Diamond.Logic.ViewModel.Weather.ViewModel;
 
 public class WeatherWidgetViewModel : ViewModelBase, IWeatherWidgetViewModel, IEventMessageHandler<CurrentForecastMessage>
 {
-    private readonly IWeatherForecastMessageTrigger _weatherForecastMessageTrigger;
+    private readonly ICurrentWeatherMessageTrigger _currentWeatherMessageTrigger;
 
     public CurrentWeatherForecast CurrentWeatherForecast { get; private set; } = new()
     {
@@ -18,19 +18,20 @@ public class WeatherWidgetViewModel : ViewModelBase, IWeatherWidgetViewModel, IE
         WindSpeed = 0,
     };
 
-    public WeatherWidgetViewModel(IWeatherForecastMessageTrigger weatherForecastMessageTrigger)
+    public WeatherWidgetViewModel(ICurrentWeatherMessageTrigger currentWeatherMessageTrigger)
     {
-        _weatherForecastMessageTrigger = weatherForecastMessageTrigger;
+        _currentWeatherMessageTrigger = currentWeatherMessageTrigger;
     }
 
-    public override async Task LoadDataAsync()
+    public override Task LoadDataAsync()
     {
-        await _weatherForecastMessageTrigger.TriggerCurrentForecastAsync();
+        _currentWeatherMessageTrigger.TriggerCurrentWeather();
+        return Task.CompletedTask;
     }
 
     public Task HandleAsync(CurrentForecastMessage eventMessage)
     {
-        var forecast = eventMessage.WeatherForecast;
+        var forecast = eventMessage.CurrentWeather;
         CurrentWeatherForecast = new()
         {
             Date = forecast.DateTime,

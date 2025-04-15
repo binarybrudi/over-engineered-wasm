@@ -1,30 +1,29 @@
-using Brudibytes.Core.EventBus.Contract;
 using Diamond.Data.Weather.Contract;
 using Diamond.Logic.Domain.Weather.Contract;
 using Diamond.Logic.Domain.Weather.Contract.DataClasses;
-using Diamond.Logic.Domain.Weather.Contract.Messaging;
 
 namespace Diamond.Logic.Domain.Weather;
 
-internal sealed class WeatherForecastProvider : IWeatherForecastProvider
+internal sealed class CurrentWeatherProvider : ICurrentWeatherProvider
 {
     private readonly ICurrentWeatherProjection _currentWeatherProjection;
 
-    public WeatherForecastProvider(ICurrentWeatherProjection currentWeatherProjection)
+    public CurrentWeatherProvider(ICurrentWeatherProjection currentWeatherProjection)
     {
         _currentWeatherProjection = currentWeatherProjection;
     }
 
-    public async Task<WeatherForecast> ProvideCurrentAsync()
+    public async Task<CurrentWeather> ProvideCurrentAsync()
     {
         var current = await _currentWeatherProjection.GetCurrentWeatherAsync();
         
-        var forecast = await Task.FromResult(new WeatherForecast()
+        var currentWeather = await Task.FromResult(new CurrentWeather()
         {
+            IsDay = current.IsDay,
             DateTime = DateTimeOffset.UtcNow,
             Temperature = current.Temperature
         });
 
-        return forecast;
+        return currentWeather;
     }
 }

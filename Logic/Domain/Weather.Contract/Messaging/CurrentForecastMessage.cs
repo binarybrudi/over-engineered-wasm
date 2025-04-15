@@ -6,5 +6,5 @@ namespace Diamond.Logic.Domain.Weather.Contract.Messaging;
 public record CurrentForecastMessage : IEventMessage
 {
     public required DateTimeOffset CreatedAt { get; init; }
-    public required WeatherForecast WeatherForecast { get; init; }
+    public required CurrentWeather CurrentWeather { get; init; }
 }

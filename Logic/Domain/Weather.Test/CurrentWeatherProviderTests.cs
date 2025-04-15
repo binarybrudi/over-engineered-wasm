@@ -1,11 +1,9 @@
-using Brudibytes.Core.EventBus.Contract;
 using Diamond.Data.Weather.Contract;
-using Diamond.Logic.Domain.Weather.Contract.Messaging;
 
 namespace Diamond.Logic.Domain.Weather.Test;
 
 [FixtureLifeCycle(LifeCycle.InstancePerTestCase)]
-public class WeatherForecastProviderTests
+public class CurrentWeatherProviderTests
 {
     private readonly ICurrentWeatherProjection _currentWeatherProjection = Substitute.For<ICurrentWeatherProjection>();
 
@@ -37,8 +35,8 @@ public class WeatherForecastProviderTests
         // then
     }
 
-    private WeatherForecastProvider CreateSut()
+    private CurrentWeatherProvider CreateSut()
     {
-        return new WeatherForecastProvider(_currentWeatherProjection);
+        return new CurrentWeatherProvider(_currentWeatherProjection);
     }
 }
