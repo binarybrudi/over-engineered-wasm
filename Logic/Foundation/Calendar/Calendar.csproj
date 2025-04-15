@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Logic.Foundation.Calendar</AssemblyName>
+        <RootNamespace>Diamond.Logic.Foundation.Calendar</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Framework\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
+      <ProjectReference Include="..\Calendar.Contract\Calendar.Contract.csproj" />
+    </ItemGroup>
+
+</Project>

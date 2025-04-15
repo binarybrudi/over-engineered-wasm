@@ -1,4 +1,5 @@
 using Diamond.Data.Weather.Contract;
+using Diamond.Data.Weather.Contract.DataClasses;
 
 namespace Diamond.Logic.Domain.Weather.Test;
 
@@ -12,6 +13,11 @@ public class CurrentWeatherProviderTests
     {
         // given
         var sut = CreateSut();
+        _currentWeatherProjection.GetCurrentWeatherAsync().Returns(new CurrentWeather()
+        {
+            Temperature = 30,
+            DateTime = DateTimeOffset.UtcNow
+        });
 
         // when
         var result = await sut.ProvideCurrentAsync();
@@ -22,17 +28,22 @@ public class CurrentWeatherProviderTests
         result.DateTime.Should().BeBefore(DateTimeOffset.UtcNow);
     }
 
-
     [Test]
     public async Task ProvideCurrentAsync_HappyPath_SendsMessage()
     {
         // given
         var sut = CreateSut();
+        _currentWeatherProjection.GetCurrentWeatherAsync().Returns(new CurrentWeather
+        {
+            Temperature = 30,
+            DateTime = DateTimeOffset.UtcNow
+        });
 
         // when
-        var result = await sut.ProvideCurrentAsync();
+        await sut.ProvideCurrentAsync();
 
         // then
+        await _currentWeatherProjection.Received(1).GetCurrentWeatherAsync();
     }
 
     private CurrentWeatherProvider CreateSut()
