@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Logic.Foundation.Calendar.Test</AssemblyName>
+        <RootNamespace>Diamond.Logic.Foundation.Calendar.Test</RootNamespace>
+    </PropertyGroup>
+
+</Project>

@@ -11,6 +11,7 @@
       <ProjectReference Include="..\..\Data\Weather.Http.OpenMeteo\Weather.Http.OpenMeteo.csproj" />
       <ProjectReference Include="..\..\Framework\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
       <ProjectReference Include="..\..\Logic\Domain\Weather\Weather.csproj" />
+      <ProjectReference Include="..\..\Logic\Foundation\Calendar\Calendar.csproj" />
       <ProjectReference Include="..\..\Logic\ViewModel\Weather.ViewModel\Weather.ViewModel.csproj" />
     </ItemGroup>
 
