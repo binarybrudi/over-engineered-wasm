@@ -37,7 +37,7 @@ public class CurrentWeatherProjectionTests
         using var scope = new AssertionScope();
         result.Should().NotBeNull();
         result.Temperature.Should().Be(25.6);
-        result.DateTime.Should().Be(DateTimeOffset.Parse("2024-01-01T12:00"));
+        result.DateTime.Should().Be(DateTimeOffset.Parse("2024-01-01T12:00+01:00"));
         messageHandler.Requests.Should().HaveCount(1);
         messageHandler.Requests[0].RequestUri!.ToString().Should()
             .Contain("latitude=51.0509")
