@@ -15,7 +15,7 @@ internal sealed class CurrentWeatherProjection : ICurrentWeatherProjection
     {
         _httpClient = clientFactory.CreateClient(Constants.HttpClient.OpenMeteoHttpClientName);
     }
-    
+
     public async Task<CurrentWeather> GetCurrentWeatherAsync()
     {
         var relativePath = "v1/forecast";
@@ -39,7 +39,7 @@ internal sealed class CurrentWeatherProjection : ICurrentWeatherProjection
 
         var endpoint = $"{relativePath}?{queryString}";
         var jsonResult = await _httpClient.GetStringAsync(endpoint);
-        
+
         var dto = JsonSerializer.Deserialize<CurrentWeatherDto>(jsonResult);
         return CurrentWeatherDtoMapper.MapToCurrentWeather(dto!);
     }

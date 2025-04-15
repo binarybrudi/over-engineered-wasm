@@ -16,7 +16,7 @@ internal sealed class CurrentWeatherProvider : ICurrentWeatherProvider
     public async Task<CurrentWeather> ProvideCurrentAsync()
     {
         var current = await _currentWeatherProjection.GetCurrentWeatherAsync();
-        
+
         var currentWeather = await Task.FromResult(new CurrentWeather()
         {
             IsDay = current.IsDay,
