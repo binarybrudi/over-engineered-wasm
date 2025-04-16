@@ -6,5 +6,5 @@ namespace Diamond.Logic.ViewModel.Weather.ViewModel.Contract;
 
 public interface IWeatherWidgetViewModel : INotifyPropertyChanged, ILoadDataAsync
 {
-    CurrentWeatherForecast CurrentWeatherForecast { get; }
+    CurrentWeatherRecord CurrentWeatherRecord { get; }
 }

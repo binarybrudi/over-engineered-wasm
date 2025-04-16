@@ -10,13 +10,13 @@ namespace Diamond.Logic.ViewModel.Weather.ViewModel;
 public class WeatherWidgetViewModel : ViewModelBase, IWeatherWidgetViewModel, IEventMessageHandler<CurrentForecastMessage>
 {
     private readonly ICurrentWeatherMessageTrigger _currentWeatherMessageTrigger;
+    private CurrentWeatherRecord _currentWeatherRecord = new();
 
-    public CurrentWeatherForecast CurrentWeatherForecast { get; private set; } = new()
+    public CurrentWeatherRecord CurrentWeatherRecord
     {
-        Humidity = 0,
-        Temperature = 0,
-        WindSpeed = 0,
-    };
+        get => _currentWeatherRecord;
+        private set => SetField(ref _currentWeatherRecord, value);
+    }
 
     public WeatherWidgetViewModel(ICurrentWeatherMessageTrigger currentWeatherMessageTrigger)
     {
@@ -32,7 +32,7 @@ public class WeatherWidgetViewModel : ViewModelBase, IWeatherWidgetViewModel, IE
     public Task HandleAsync(CurrentForecastMessage eventMessage)
     {
         var forecast = eventMessage.CurrentWeather;
-        CurrentWeatherForecast = new()
+        CurrentWeatherRecord = new()
         {
             Date = forecast.DateTime,
             Temperature = forecast.Temperature
