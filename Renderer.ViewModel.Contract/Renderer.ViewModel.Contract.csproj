@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Logic.ViewModel.Renderer.ViewModel.Contract</AssemblyName>
+        <RootNamespace>Diamond.Logic.ViewModel.Renderer.ViewModel.Contract</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Framework\Brudibytes.MVVM\Brudibytes.MVVM.csproj" />
+    </ItemGroup>
+
+</Project>
