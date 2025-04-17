@@ -34,6 +34,7 @@ public class ComponentMap : IComponentMap
 
     private void InitializeDomainLogic(ICoCoKernel kernel)
     {
+        kernel.RegisterComponent<Logic.Domain.Renderer3D.SoftwareRenderer.Activator>();
         kernel.RegisterComponent<Logic.Domain.Weather.Activator>();
     }
 }
