@@ -27,7 +27,7 @@ public class CurrentWeatherProjectionTests
             }")
             }
         };
-        
+
         var sut = CreateSut(messageHandler);
 
         // when
@@ -68,7 +68,7 @@ public class CurrentWeatherProjectionTests
         // given
         var messageHandler = new MockHttpMessageHandler()
         {
-            Response =  new HttpResponseMessage
+            Response = new HttpResponseMessage
             {
                 StatusCode = HttpStatusCode.OK,
                 Content = new StringContent("invalid json")
