@@ -9,4 +9,6 @@ public interface IRendererViewModel : INotifyPropertyChanged, ILoadDataAsync
     public Dimensions Dimensions { get; }
     
     void SetDimensions(Dimensions dimensions);
+    void SetAsyncCallback(Func<byte[], Task> callback);
+    Task StartRendering();
 }

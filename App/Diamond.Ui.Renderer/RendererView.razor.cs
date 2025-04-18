@@ -22,15 +22,17 @@ public partial class RendererView : ViewModelComponentBase<IRendererViewModel>
         _dotNetObjectReference = DotNetObjectReference.Create(this);
         _module = await _jsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/Diamond.Ui.Renderer/RendererView.razor.js");
         await _module.InvokeVoidAsync("initCanvas", _canvasElementReference, _dotNetObjectReference);
+        ViewModel.SetAsyncCallback(RenderFrameAsync);
+        await ViewModel.StartRendering();
     }
 
-    public async Task RenderFrameAsync(byte[] pixelData)
+    public async Task RenderFrameAsync(byte[] rgbaData)
     {
         if (_module is not null)
         {
             try
             {
-                await _module.InvokeVoidAsync("renderFrame", _canvasElementReference, pixelData);
+                await _module.InvokeVoidAsync("renderFrame", _canvasElementReference, rgbaData);
             }
             catch (Exception ex)
             {
@@ -52,12 +54,16 @@ public partial class RendererView : ViewModelComponentBase<IRendererViewModel>
     public override async ValueTask DisposeAsync()
     {
         _dotNetObjectReference?.Dispose();
-
-        if (_module is not null)
+ 
+        try
         {
-            await _module.InvokeVoidAsync("cleanupCanvas", _canvasElementReference);
-            await _module.DisposeAsync();
+            if (_module is not null)
+            {
+                await _module.InvokeVoidAsync("cleanupCanvas", _canvasElementReference);
+                await _module.DisposeAsync();
+            }
         }
+        catch (JSDisconnectedException) { }
     }
 }
 

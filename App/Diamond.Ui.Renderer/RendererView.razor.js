@@ -18,3 +18,21 @@ export function initCanvas(canvas, dotNetRef) {
     // store the observer in the canvas element for cleanup
     canvas._resizeObserver = resizeObserver;
 }
+
+export function renderFrame(canvas, pixelArray) {
+    const ctx = canvas.getContext('2d', { alpha: false });
+    const width = canvas.width;
+    const height = canvas.height;
+
+    const imageData = ctx.createImageData(width, height);
+    imageData.data.set(pixelArray);
+    
+    ctx.putImageData(imageData, 0, 0);
+}
+
+export function cleanupCanvas(canvas) {
+    if (canvas && canvas._resizeObserver) {
+        canvas._resizeObserver.disconnect();
+        delete canvas._resizeObserver;
+    }
+}

@@ -7,6 +7,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Framework\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
+      <ProjectReference Include="..\Logic\Domain\Renderer3D.Contract\Renderer3D.Contract.csproj" />
+      <ProjectReference Include="..\Renderer.ViewModel.Contract\Renderer.ViewModel.Contract.csproj" />
     </ItemGroup>
 
 </Project>

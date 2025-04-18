@@ -4,11 +4,6 @@
     <AssemblyName>DiamondApp</AssemblyName>
     <RootNamespace>DiamondApp</RootNamespace>
   </PropertyGroup>
-  
-  <PropertyGroup>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <PublishUrl>wwwroot</PublishUrl>
-  </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" />
