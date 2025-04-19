@@ -9,57 +9,43 @@ namespace Diamond.Logic.ViewModel.Renderer.ViewModel;
 
 public class RendererViewModel : ViewModelBase, IRendererViewModel
 {
-    private readonly ComputationService _computationService;
     private readonly IRenderer _renderer;
-    private Dimensions _dimensions = new(){ Height = 100, Width = 100};
-    private Func<byte[], Task> _callback;
+    private Dimensions _dimensions = new() { Height = 100, Width = 100 };
+    private Func<byte[], Task> _onBufferCreatedCallback;
 
     public Dimensions Dimensions
     {
-        get  => _dimensions;
+        get => _dimensions;
         private set => SetField(ref _dimensions, value);
     }
 
     public void SetDimensions(Dimensions dimensions)
     {
         Dimensions = dimensions;
-        Console.WriteLine(Dimensions);
-    }
-
-    public void SetAsyncCallback(Func<byte[], Task> callback)
-    {
-        _callback = callback;
     }
 
     public RendererViewModel(
-        ComputationService computationService,
         IRenderer renderer)
     {
-        _computationService = computationService;
-        _computationService.BufferCreated += ComputationServiceOnBufferCreated;
         _renderer = renderer;
-        _callback = _ => Task.CompletedTask;
+        _onBufferCreatedCallback = _ => Task.CompletedTask;
     }
 
-    private void ComputationServiceOnBufferCreated(ColorBuffer obj)
+    public async Task StartRendering(Func<byte[], Task> onBufferCreatedCallback)
     {
-        OnBufferCreated(obj);
-    }
-
-    public async Task StartRendering()
-    {
+        _onBufferCreatedCallback = onBufferCreatedCallback;
         _renderer.Initialize(new RenderSettings()
         {
             TargetFrameRate = 10,
             Dimensions = new() { Height = Dimensions.Height, Width = Dimensions.Width },
             OnCreatedNextColorBuffer = OnBufferCreated
         });
-        await _computationService.ComputeAsync(_renderer);
+        await _renderer.StartRenderLoopAsync();
     }
 
     private Task OnBufferCreated(ColorBuffer colorBuffer)
     {
         var rgba = colorBuffer.ToRgba();
-        return _callback(rgba);
+        return _onBufferCreatedCallback(rgba);
     }
 }

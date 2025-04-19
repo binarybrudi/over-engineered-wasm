@@ -8,11 +8,11 @@ internal class SettingSetter : ISettingsSetter
     {
         var fpsLimit = Math.Max(1, settings.TargetFrameRate);
         var targetFrameTime = 1000f / fpsLimit;
-        
+
         container.IsInitialized = true;
         container.TargetFrameTime = targetFrameTime;
         container.PixelCount = settings.Dimensions.Width * settings.Dimensions.Height;
-        
+
         return container;
     }
 }

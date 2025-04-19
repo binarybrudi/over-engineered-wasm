@@ -5,7 +5,7 @@ namespace Diamond.Logic.Domain.Renderer3D.SoftwareRenderer;
 internal sealed class FrameLimiter : IFrameLimiter
 {
     private readonly Stopwatch _stopwatch = new();
-    
+
     public void Restart()
     {
         _stopwatch.Restart();
@@ -24,7 +24,6 @@ internal sealed class FrameLimiter : IFrameLimiter
         if (sleepTime == 0) return;
         await Task.Delay(sleepTime);
     }
-
 
     public void Stop()
     {

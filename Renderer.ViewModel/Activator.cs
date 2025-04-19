@@ -17,7 +17,6 @@ public class Activator : IComponentActivator
 
     public void RegisterMappings(IServiceCollection serviceCollection)
     {
-        serviceCollection.AddTransient<ComputationService>();
         serviceCollection.AddTransient<IRendererViewModel, RendererViewModel>();
     }
 
