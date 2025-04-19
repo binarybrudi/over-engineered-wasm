@@ -7,7 +7,7 @@ using Diamond.Logic.ViewModel.Renderer.ViewModel.Contract.DataClasses;
 
 namespace Diamond.Logic.ViewModel.Renderer.ViewModel;
 
-public class RendererViewModel : ViewModelBase, IRendererViewModel
+internal class RendererViewModel : ViewModelBase, IRendererViewModel
 {
     private readonly IRenderer _renderer;
     private Dimensions _dimensions = new() { Height = 100, Width = 100 };

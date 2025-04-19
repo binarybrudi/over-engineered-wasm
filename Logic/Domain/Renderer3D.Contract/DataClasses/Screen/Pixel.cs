@@ -1,6 +1,6 @@
 namespace Diamond.Logic.Domain.Renderer3D.Contract.DataClasses.Screen;
 
-public record Pixel
+public class Pixel
 {
     public byte Alpha { get; set; }
     public byte Red { get; set; }

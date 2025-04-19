@@ -7,9 +7,5 @@ internal struct Settings
     public float TargetFrameTime { get; set; } = 1f;
     public int PixelCount { get; set; } = 0;
 
-    public Settings()
-    {
-    }
-
-
+    public Settings() { }
 }
