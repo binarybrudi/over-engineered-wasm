@@ -1,3 +1,13 @@
 @import '_content/Diamond.Ui.Renderer/Diamond.Ui.Renderer.6p3u3aw6xo.bundle.scp.css';
 @import '_content/Diamond.Ui.Weather/Diamond.Ui.Weather.y2amqa4uyf.bundle.scp.css';
 
+/* /Pages/Home.razor.rz.scp.css */
+.stack[b-zhej1fsuu8] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
