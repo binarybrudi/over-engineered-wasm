@@ -7,12 +7,15 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\App\Diamond.Ui.Renderer\Diamond.Ui.Renderer.csproj" />
       <ProjectReference Include="..\..\App\Diamond.Ui.Weather\Diamond.Ui.Weather.csproj" />
       <ProjectReference Include="..\..\Data\Weather.Http.OpenMeteo\Weather.Http.OpenMeteo.csproj" />
       <ProjectReference Include="..\..\Framework\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
+      <ProjectReference Include="..\..\Logic\Domain\Renderer3D.SoftwareRenderer\Renderer3D.SoftwareRenderer.csproj" />
       <ProjectReference Include="..\..\Logic\Domain\Weather\Weather.csproj" />
       <ProjectReference Include="..\..\Logic\Foundation\Calendar\Calendar.csproj" />
       <ProjectReference Include="..\..\Logic\ViewModel\Weather.ViewModel\Weather.ViewModel.csproj" />
+      <ProjectReference Include="..\..\Renderer.ViewModel\Renderer.ViewModel.csproj" />
     </ItemGroup>
 
 </Project>

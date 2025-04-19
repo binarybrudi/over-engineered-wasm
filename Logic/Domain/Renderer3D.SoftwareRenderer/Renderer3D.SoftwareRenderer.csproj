@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Logic.Domain.Renderer3D.SoftwareRenderer</AssemblyName>
+        <RootNamespace>Diamond.Logic.Domain.Renderer3D.SoftwareRenderer</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Framework\Brudibytes.Core.Contract\Brudibytes.Core.Contract.csproj" />
+      <ProjectReference Include="..\Renderer3D.Contract\Renderer3D.Contract.csproj" />
+    </ItemGroup>
+
+</Project>

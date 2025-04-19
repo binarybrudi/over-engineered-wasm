@@ -1,0 +1,5 @@
+@inherits Brudibytes.Blazor.ViewModelComponentBase<Diamond.Logic.ViewModel.Renderer.ViewModel.Contract.IRendererViewModel>
+
+<div class="renderer-container">
+    <canvas @ref="_canvasElementReference" width="@ViewModel.Dimensions.Width" height="@ViewModel.Dimensions.Height"></canvas>
+</div>

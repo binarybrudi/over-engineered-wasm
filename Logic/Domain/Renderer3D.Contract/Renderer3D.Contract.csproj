@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Diamond.Logic.Domain.Renderer3D.Contract</AssemblyName>
+        <RootNamespace>Diamond.Logic.Domain.Renderer3D.Contract</RootNamespace>
+    </PropertyGroup>
+
+</Project>

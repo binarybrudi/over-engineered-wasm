@@ -24,16 +24,19 @@ public class ComponentMap : IComponentMap
 
     private void InitializeViewModel(ICoCoKernel kernel)
     {
+        kernel.RegisterComponent<Diamond.Logic.ViewModel.Renderer.ViewModel.Activator>();
         kernel.RegisterComponent<Diamond.Logic.ViewModel.Weather.ViewModel.Activator>();
     }
 
     private void InitializeUi(ICoCoKernel kernel)
     {
+        kernel.RegisterComponent<Diamond.Ui.Renderer.Activator>();
         kernel.RegisterComponent<Diamond.Ui.Weather.Activator>();
     }
 
     private void InitializeDomainLogic(ICoCoKernel kernel)
     {
+        kernel.RegisterComponent<Logic.Domain.Renderer3D.SoftwareRenderer.Activator>();
         kernel.RegisterComponent<Logic.Domain.Weather.Activator>();
     }
 }
