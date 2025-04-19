@@ -1,5 +1,6 @@
 ﻿@page "/"
 @inherits BbComponentBase
+
 @using Diamond.Ui.Weather.Widgets
 @using Diamond.Ui.Renderer
 
@@ -9,9 +10,27 @@
 
 Welcome to your new app.
 
-<div style="width: 100px;">
-    <WeatherWidget />
+<div class="stack">
+    <div style="width: 100px;">
+        <WeatherWidget />
+    </div>
+    <div style="width: 100px">
+        <RendererView />
+    </div>
+    <div>
+        <span>@Count</span>
+    </div>
+    <div>
+        <button onmouseup="@(Increment)">increase</button>
+    </div>
 </div>
-<div style="width: 100px">
-    <RendererView />
-</div>
+
+@code
+{
+    public int Count { get; set; } = 0;
+
+    private void Increment()
+    {
+        Count++;
+    }
+}
