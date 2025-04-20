@@ -19,26 +19,26 @@
 
 ```mermaid
 flowchart TD
-    subgraph [vertical layer]
-        subgraph [app layer]
+    subgraph vertical layer
+        subgraph app layer
         end
-        subgraph [logic layer]
-            subgraph [domain]
-                subgraph [domain contract]
+        subgraph logic layer
+            subgraph domain
+                subgraph domain contract
                 end
-                subgraph [domain implementation]
+                subgraph domain implementation
                 end
             end
-            subgraph [foundation]
+            subgraph foundation
             end
-            subgraph [view model]
-                subgraph [view model contract]
+            subgraph view model
+                subgraph view model contract
                 end
-                subgraph [view model implementation]
+                subgraph view model implementation
                 end
             end
         end
-        subgraph [data layer]
+        subgraph data layer
         end
     end
 ```
