@@ -19,5 +19,26 @@
 
 ```mermaid
 flowchart TD
-    wasm[Diamond WASM] ---> logiccontract[logic contract]
+    subgraph [vertical layer]
+        subgraph [app layer]
+        end
+        subgraph [logic layer]
+            subgraph [domain]
+                subgraph [domain contract]
+                end
+                subgraph [domain implementation]
+                end
+            end
+            subgraph [foundation]
+            end
+            subgraph [view model]
+                subgraph [view model contract]
+                end
+                subgraph [view model implementation]
+                end
+            end
+        end
+        subgraph [data layer]
+        end
+    end
 ```
