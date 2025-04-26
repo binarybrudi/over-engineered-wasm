@@ -18,27 +18,38 @@
 ## architecture
 
 ```mermaid
-flowchart TD
-    subgraph vertical layer
-        subgraph app layer
+flowchart LR
+    subgraph horizontal
+        direction TB
+        subgraph app
+            direction LR 
+            Diamond.APP
+            Weather.UI
+            Renderer.UI
         end
-        subgraph logic layer
+        subgraph logic
+            direction TB
             subgraph domain
-                subgraph domain contract
-                end
-                subgraph domain implementation
-                end
-            end
-            subgraph foundation
-            end
-            subgraph view model
-                subgraph view model contract
-                end
-                subgraph view model implementation
-                end
+                direction LR
+                Weather
+                Renderer
             end
         end
-        subgraph data layer
-        end
+        subgraph data
+            direction LR
+            Weather.Data
+        end 
+        
     end
+    subgraph vertical
+        direction TB
+        CM[Component Mapping]
+    end
+
+    vertical ---> app
+    vertical ---> logic
+    vertical ---> data
+    
+    app ---> logic
+    logic ---> data
 ```
