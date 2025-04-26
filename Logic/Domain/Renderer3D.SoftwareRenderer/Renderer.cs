@@ -1,6 +1,5 @@
 using Diamond.Logic.Domain.Renderer3D.Contract;
 using Diamond.Logic.Domain.Renderer3D.Contract.DataClasses;
-using Diamond.Logic.Domain.Renderer3D.Contract.DataClasses.Screen;
 using Diamond.Logic.Domain.Renderer3D.Contract.Exceptions;
 using Diamond.Logic.Domain.Renderer3D.SoftwareRenderer.Settings;
 
@@ -8,15 +7,18 @@ namespace Diamond.Logic.Domain.Renderer3D.SoftwareRenderer;
 
 internal class Renderer : IRenderer
 {
+    private readonly IColorBufferBuilder _colorBufferBuilder;
     private readonly IFrameLimiter _frameLimiter;
     private readonly ISettingsSetter _settingsSetter;
     private Settings.Settings _settings;
     private Func<ColorBuffer, Task>? _bufferCreated;
 
     public Renderer(
+        IColorBufferBuilder colorBufferBuilder,
         IFrameLimiter frameLimiter,
         ISettingsSetter settingsSetter)
     {
+        _colorBufferBuilder = colorBufferBuilder;
         _frameLimiter = frameLimiter;
         _settingsSetter = settingsSetter;
     }
@@ -41,6 +43,7 @@ internal class Renderer : IRenderer
     {
         _settings = _settingsSetter.Set(settings, _settings);
         _bufferCreated = settings.OnCreatedNextColorBuffer;
+        _colorBufferBuilder.SetDimensions(settings.Dimensions);
     }
 
     private void CheckInitialized()
@@ -56,19 +59,12 @@ internal class Renderer : IRenderer
         var computedFrames = 0;
         byte r = 0, g = 0, b = 0;
         _settings.IsRunning = true;
-        var colorBuffer = new ColorBuffer(_settings.PixelCount);
         while (_settings.IsRunning)
         {
             _frameLimiter.Restart();
-            foreach (var pixel in colorBuffer.Buffer)
-            {
-                pixel.Alpha = 255;
-                pixel.Red = r;
-                pixel.Green = g;
-                pixel.Blue = b;
-            }
+            _colorBufferBuilder.Fill(new(r, g, b, 255));
 
-            RaiseBufferCreated(colorBuffer);
+            RaiseBufferCreated(_colorBufferBuilder.Build());
             computedFrames++;
             if (computedFrames % 30 == 0)
             {

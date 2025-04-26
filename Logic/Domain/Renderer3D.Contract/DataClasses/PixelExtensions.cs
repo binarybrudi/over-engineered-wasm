@@ -1,4 +1,4 @@
-namespace Diamond.Logic.Domain.Renderer3D.Contract.DataClasses.Screen;
+namespace Diamond.Logic.Domain.Renderer3D.Contract.DataClasses;
 
 public static class PixelExtensions
 {

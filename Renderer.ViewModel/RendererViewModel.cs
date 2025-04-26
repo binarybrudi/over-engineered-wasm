@@ -1,7 +1,6 @@
 using Brudibytes.MVVM;
 using Diamond.Logic.Domain.Renderer3D.Contract;
 using Diamond.Logic.Domain.Renderer3D.Contract.DataClasses;
-using Diamond.Logic.Domain.Renderer3D.Contract.DataClasses.Screen;
 using Diamond.Logic.ViewModel.Renderer.ViewModel.Contract;
 using Diamond.Logic.ViewModel.Renderer.ViewModel.Contract.DataClasses;
 

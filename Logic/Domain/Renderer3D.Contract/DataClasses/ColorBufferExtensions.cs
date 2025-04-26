@@ -1,14 +1,14 @@
-namespace Diamond.Logic.Domain.Renderer3D.Contract.DataClasses.Screen;
+namespace Diamond.Logic.Domain.Renderer3D.Contract.DataClasses;
 
 public static class ColorBufferExtensions
 {
     public static byte[] ToRgba(this ColorBuffer colorBuffer)
     {
-        var resultSize = colorBuffer.Buffer.Length * 4;
+        var resultSize = colorBuffer.Pixels.Count * 4;
         var result = new byte[resultSize];
 
         var currentPosition = 0;
-        foreach (var byteArray in colorBuffer.Buffer.Select(pixel => pixel.ToRgba()))
+        foreach (var byteArray in colorBuffer.Pixels.Select(pixel => pixel.ToRgba()))
         {
             Buffer.BlockCopy(byteArray, 0, result, currentPosition, byteArray.Length);
             currentPosition += byteArray.Length;
