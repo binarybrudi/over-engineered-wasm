@@ -1,6 +1,6 @@
 namespace Diamond.Logic.Domain.Renderer3D.SoftwareRenderer.DataClasses;
 
-internal sealed class MutablePixel
+internal sealed class MutableColorRgba
 {
     public byte Alpha { get; set; }
     public byte Red { get; set; }

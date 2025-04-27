@@ -5,6 +5,6 @@ namespace Diamond.Logic.Domain.Renderer3D.SoftwareRenderer.Mapping;
 
 internal interface IPixelMapper
 {
-    Pixel[] From(MutablePixel[] from);
-    void Map(ref Pixel from, ref MutablePixel to);
+    ColorRgba[] From(MutableColorRgba[] from);
+    void Map(ref ColorRgba from, ref MutableColorRgba to);
 }

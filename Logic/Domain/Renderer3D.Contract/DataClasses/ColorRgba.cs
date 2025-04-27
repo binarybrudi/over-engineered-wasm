@@ -1,15 +1,15 @@
 namespace Diamond.Logic.Domain.Renderer3D.Contract.DataClasses;
 
-public readonly struct Pixel
+public readonly struct ColorRgba
 {
     public byte Alpha { get; }
     public byte Red { get; }
     public byte Green { get; }
     public byte Blue { get; }
     
-    public Pixel() : this(0, 0, 0, byte.MaxValue) { }
+    public ColorRgba() : this(0, 0, 0, byte.MaxValue) { }
 
-    public Pixel(byte red, byte green, byte blue, byte alpha)
+    public ColorRgba(byte red, byte green, byte blue, byte alpha)
     {
         Red = red;
         Green = green;
@@ -33,7 +33,7 @@ public readonly struct Pixel
     /// <example>
     /// <code>var pixel = new Pixel(0xFF00FF80); // R:255, G:0, B:255, A:128</code>
     /// </example>
-    public Pixel(uint rgba)
+    public ColorRgba(uint rgba)
     {
         Red = (byte)((rgba >> 24) & 0xFF);
         Green = (byte)((rgba >> 16) & 0xFF);

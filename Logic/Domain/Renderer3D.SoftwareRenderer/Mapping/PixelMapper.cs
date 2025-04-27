@@ -5,10 +5,10 @@ namespace Diamond.Logic.Domain.Renderer3D.SoftwareRenderer.Mapping;
 
 internal sealed class PixelMapper : IPixelMapper
 {
-    public Pixel[] From(MutablePixel[] from)
+    public ColorRgba[] From(MutableColorRgba[] from)
     {
         return from.Select(
-            x => new Pixel(
+            x => new ColorRgba(
                 x.Red, 
                 x.Green, 
                 x.Blue, 
@@ -17,7 +17,7 @@ internal sealed class PixelMapper : IPixelMapper
         .ToArray();
     }
 
-    public void Map(ref Pixel from, ref MutablePixel to)
+    public void Map(ref ColorRgba from, ref MutableColorRgba to)
     {
         to.Alpha = from.Alpha;
         to.Red = from.Red;
